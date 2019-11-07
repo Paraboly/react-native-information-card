@@ -34,7 +34,7 @@ const InformationCard = props => {
         }}
       >
         <View style={{ flexDirection: "row" }}>
-          <View
+          {/* <View
             style={{
               height: 115,
               marginLeft: 16,
@@ -46,13 +46,19 @@ const InformationCard = props => {
               style={{ height: 50, width: 50 }}
               source={require("../assets/real.png")}
             />
-          </View>
-          <View style={{ margin: 16, width: "70%" }}>
-            <View style={{ justifyContent: "center" }}>
+          </View> */}
+          <View style={{ margin: 16, width: "90%" }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <Image
+                resizeMode="contain"
+                style={{ height: 20, width: 20 }}
+                source={require("../assets/real.png")}
+              />
               <Text
                 numberOfLines={1}
                 style={{
                   fontSize: 16,
+                  marginLeft: 12,
                   fontWeight: "700",
                   fontFamily: "JosefinSans-Regular"
                 }}
@@ -61,7 +67,12 @@ const InformationCard = props => {
               </Text>
             </View>
             <Text
-              style={{ color: "#ababab", fontSize: 13, marginTop: 8 }}
+              style={{
+                color: "#ababab",
+                fontSize: 13,
+                marginTop: 8,
+                fontFamily: "JosefinSans-Regular"
+              }}
               numberOfLines={2}
             >
               Morbi fringilla nisl vel lacus varius maximus. Etiam et mauris
@@ -69,17 +80,28 @@ const InformationCard = props => {
             </Text>
             <View style={{ marginTop: 8 }}>
               <View style={{ flexDirection: "column" }}>
-                <Text style={{ color: "#757575", fontSize: 10 }}>
+                <Text
+                  style={{
+                    color: "#757575",
+                    fontSize: 11,
+                    fontFamily: "JosefinSans-Regular"
+                  }}
+                >
                   Bitiş Tarihi
                 </Text>
                 <Text
-                  style={{ color: "#757575", fontSize: 11, fontWeight: "700" }}
+                  style={{
+                    color: "#757575",
+                    fontSize: 11,
+                    fontWeight: "700",
+                    fontFamily: "JosefinSans-Regular"
+                  }}
                 >
                   05/02/2020
                 </Text>
               </View>
 
-              <View style={{ position: "absolute", bottom: 0, right: -12 }}>
+              <View style={{ position: "absolute", bottom: -4, right: -12 }}>
                 <View
                   style={{
                     borderRadius: 10,
@@ -92,7 +114,13 @@ const InformationCard = props => {
                     backgroundColor: "#f4a012"
                   }}
                 >
-                  <Text style={{ color: "#fff", fontWeight: "bold" }}>
+                  <Text
+                    style={{
+                      color: "#fff",
+                      fontWeight: "bold",
+                      fontFamily: "JosefinSans-Regular"
+                    }}
+                  >
                     Tamamlandı
                   </Text>
                 </View>
