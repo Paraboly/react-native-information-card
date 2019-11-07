@@ -22,6 +22,7 @@ const InformationCard = props => {
       }}
     >
       <Ripple
+        rippleColor="#f4a012"
         rippleDuration={1000}
         rippleContainerBorderRadius={16}
         onPress={onPress}
@@ -32,10 +33,10 @@ const InformationCard = props => {
           width: ScreenWidth * 0.9
         }}
       >
-        <View style={{ alignItems: "center", justifyContent: "center" }}>
+        <View style={{ margin: 16 }}>
           <Image
             style={{ height: 50, width: 50 }}
-            source={require("../assets/asteroid.png")}
+            source={require("../assets/real.png")}
           />
         </View>
         <Text></Text>
