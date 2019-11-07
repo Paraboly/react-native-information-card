@@ -33,10 +33,9 @@ const InformationCard = props => {
         }}
       >
         <View style={{ alignItems: "center", justifyContent: "center" }}>
-          <SvgUri
-            width="75"
-            height="75"
-            source={require("../assets/homer.svg")}
+          <Image
+            style={{ height: 50, width: 50 }}
+            source={require("../assets/asteroid.png")}
           />
         </View>
         <Text></Text>
