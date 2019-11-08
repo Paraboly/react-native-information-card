@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar
-} from "react-native";
-
-import InformationCard from "./lib/src/InformationCard";
+import { View, StatusBar, SafeAreaView } from "react-native";
+import InformationCard from "@paraboly/react-native-information-card";
 
 const App = () => {
   return (
