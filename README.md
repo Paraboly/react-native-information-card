@@ -2,7 +2,7 @@
 
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/Paraboly/@paraboly/react-native-information-card)
 
-[![React Native Library Boiler Plate](https://img.shields.io/badge/-React%20Native%20Library%20Boilerplate-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/@paraboly/react-native-information-card)
+[![Fully customizable information card for React Native via Paraboly](https://img.shields.io/badge/-Fully%20customizable%20information%20card%20for%20React%20Native%20via%20Paraboly-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/@paraboly/react-native-information-card)
 
 [![npm version](https://img.shields.io/npm/v/@paraboly/react-native-information-card.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/react-native-information-card)
 [![npm](https://img.shields.io/npm/dt/@paraboly/react-native-information-card.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/react-native-information-card)
@@ -42,7 +42,7 @@ npm i @paraboly/react-native-information-card
 import InformationCard from "@paraboly/react-native-information-card";
 ```
 
-## Component1 Usage
+## Basic Usage
 
 ```jsx
 <InformationCard />
