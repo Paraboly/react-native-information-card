@@ -1,7 +1,6 @@
 import React from "react";
 import { View, StatusBar, SafeAreaView } from "react-native";
-//import InformationCard from "@paraboly/react-native-information-card";
-import InformationCard from "../example/lib/src/InformationCard";
+import InformationCard from "@paraboly/react-native-information-card";
 
 const App = () => {
   return (

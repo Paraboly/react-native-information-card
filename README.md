@@ -32,6 +32,8 @@ npm i @paraboly/react-native-information-card
 "react-native": ">= 0.55.x",
 "react-native-androw": ">= 0.0.34",
 "react-native-material-ripple": ">= 0.9.1"
+"react-native-dynamic-vector-icons": ">=0.1.1",
+"react-native-vector-icons": ">=6.6.0"
 ```
 
 # Usage
