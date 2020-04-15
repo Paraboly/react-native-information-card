@@ -1,15 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Text,
-  View,
-  Image,
-  Dimensions,
-  TouchableOpacity,
-  Button,
-} from "react-native";
+import { Text, View, Image, Dimensions, TouchableOpacity } from "react-native";
 import Androw from "react-native-androw";
-import Ripple from "react-native-material-ripple";
 import Icon from "react-native-dynamic-vector-icons";
 import styles, {
   container,
@@ -27,8 +19,11 @@ const InformationCard = (props) => {
     height,
     source,
     onPress,
+    iconName,
+    iconType,
     dateText,
     dateTitle,
+    iconColor,
     imageStyle,
     statusText,
     fontFamily,
@@ -42,19 +37,18 @@ const InformationCard = (props) => {
     descTextStyle,
     dateTextStyle,
     titleTextStyle,
+    topButtonStyle,
     statusContainer,
     borderLeftWidth,
     backgroundColor,
     statusTextStyle,
+    onPressTopButton,
+    disableTopButton,
     secondaryDateText,
+    topButtonComponent,
     secondaryDateTitle,
     dateTitleTextStyle,
     descriptionDisable,
-    topButtonStyle,
-    onPressTopButton,
-    iconName,
-    iconType,
-    iconColor,
   } = props;
 
   return (
@@ -160,16 +154,21 @@ const InformationCard = (props) => {
                 </View>
               </View>
             </View>
-            <View>
-              <TouchableOpacity style={topButtonStyle || styles.topButtonStyle}>
-                <Icon
-                  size={24}
-                  name={iconName}
-                  type={iconType}
-                  color={iconColor}
-                />
+            {!disableTopButton && (
+              <TouchableOpacity
+                style={topButtonStyle || styles.topButtonStyle}
+                onPress={onPressTopButton}
+              >
+                {topButtonComponent || (
+                  <Icon
+                    size={16}
+                    name={iconName}
+                    type={iconType}
+                    color={iconColor}
+                  />
+                )}
               </TouchableOpacity>
-            </View>
+            )}
           </View>
         </TouchableOpacity>
       </View>
@@ -180,12 +179,14 @@ const InformationCard = (props) => {
 InformationCard.propTypes = {
   title: PropTypes.string,
   dateText: PropTypes.string,
+  iconColor: PropTypes.string,
   dateTitle: PropTypes.string,
   statusText: PropTypes.string,
   shadowColor: PropTypes.string,
   description: PropTypes.string,
   statusColor: PropTypes.string,
   borderRadius: PropTypes.number,
+  disableTopButton: PropTypes.bool,
   backgroundColor: PropTypes.string,
   borderLeftWidth: PropTypes.number,
   descriptionDisable: PropTypes.bool,
@@ -194,7 +195,6 @@ InformationCard.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderColor: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  iconColor: PropTypes.string,
 };
 
 InformationCard.defaultProps = {
@@ -216,9 +216,9 @@ InformationCard.defaultProps = {
   source: { uri: "https://image.flaticon.com/icons/png/256/2240/2240692.png" },
   description:
     "Morbi fringilla nisl vel lacus varius maximus. Etiam et mauris tortor. Sed et mauris non neque luctus tempus.",
+  iconName: "navigation",
   iconColor: "#fdfdfd",
-  iconType: "AntDesign",
-  iconName: "right",
+  iconType: "Feather",
 };
 
 export default InformationCard;
