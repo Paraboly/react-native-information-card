@@ -42,6 +42,9 @@ const App = () => {
             statusColor="#f54242"
             statusText="Urgent"
             borderColor="#f54242"
+            firstDateDisable
+            secondaryDateDisable
+            statusContainer={{ right: -12, position: "absolute" }}
           />
         </View>
       </SafeAreaView>
