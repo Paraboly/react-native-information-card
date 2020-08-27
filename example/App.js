@@ -10,7 +10,11 @@ const App = () => {
         style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
       >
         <View style={{ marginTop: 12 }}>
-          <InformationCard statusText="Waiting" statusColor="#4287f5" />
+          <InformationCard
+            fontFamily="Montserrat-Regular"
+            statusText="Waiting"
+            statusColor="#4287f5"
+          />
         </View>
         <View style={{ marginTop: 12 }}>
           <InformationCard
