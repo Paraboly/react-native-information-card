@@ -10,11 +10,7 @@ const App = () => {
         style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
       >
         <View style={{ marginTop: 12 }}>
-          <InformationCard
-            fontFamily="Montserrat-Regular"
-            statusText="Waiting"
-            statusColor="#4287f5"
-          />
+          <InformationCard statusText="Waiting" statusColor="#4287f5" />
         </View>
         <View style={{ marginTop: 12 }}>
           <InformationCard
@@ -42,9 +38,6 @@ const App = () => {
             statusColor="#f54242"
             statusText="Urgent"
             borderColor="#f54242"
-            firstDateDisable
-            secondaryDateDisable
-            statusContainer={{ right: -12, position: "absolute" }}
           />
         </View>
       </SafeAreaView>
