@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/react-native-information-card",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fully customizable information card for React Native via Paraboly",
   "keywords": [
     "FreakyCoder",
@@ -25,6 +25,10 @@
     "react-native-androw": ">= 0.0.34",
     "react-native-material-ripple": ">= 0.9.1",
     "react-native-dynamic-vector-icons": ">= 0.1.1",
-    "react-native-vector-icons": ">= 6.6.0"
+    "react-native-vector-icons": ">= 6.6.0",
+    "react-native-svg": "^12.1.0"
+  },
+  "dependencies": {
+    "react-native-svg": "^12.1.0"
   }
 }
